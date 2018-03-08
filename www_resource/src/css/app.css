@@ -1,0 +1,42 @@
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .framework7-root {
+        height: 812px;
+    }
+    .page-content {
+        padding-top: 0px !important;
+    }
+    .navbar,
+    .toolbar-extend {
+        height: calc(constant(safe-area-inset-bottom) + 44px) !important;
+        height: calc(env(safe-area-inset-bottom) + 44px) !important;
+        left: 0;
+        bottom: 0;
+    }
+    html.with-statusbar-overlay .statusbar-overlay {
+        display: none !important;
+    }
+    html.with-statusbar-overlay .framework7-root {
+        padding-top: 0;
+    }
+    html.with-statusbar-overlay .page-content {
+        padding-top: 77px !important;
+    }
+    .ios .toolbar-inner {
+        padding: 0;
+        height: 50px;
+    }
+}
+body {
+    user-select: none;
+    overflow: hidden;
+}
+.preloader-text {
+    display: block;
+    padding: 10px 0;
+}
+.statusbar-overlay {
+    background: #24b39f;
+}
+body.keyboard-is-open .tabbar {
+    display: none;
+}
